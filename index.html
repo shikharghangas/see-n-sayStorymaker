@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Storymaker Toy</title>
+	<link rel="stylesheet" href="css/normalize.css" />
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+<div class="container">
+	<h1>Storymaker Toy</h1>
+	<div class="button-container">
+		<div class="button-group">
+			<button class="one-button" onclick="generateRandomWord('1')">1</button>
+			<p class="object-names">The turkey<br>Mom<br>Dad<br>The dog<br>The teacher<br>The elephant<br>The cat</p>
+		</div>
+		<div class="button-group">
+			<button class="two-button" onclick="generateRandomWord('2')">2</button>
+			<p class="object-names">sat on<br>ate<br>danced with<br>saw<br>doesn't like<br>kissed</p>
+		</div>
+		<div class="button-group">
+			<button class="three-button" onclick="generateRandomWord('3')">3</button>
+			<p class="object-names">a funny<br>a scary<br>a goofy<br>a slimy<br>a barking<br>a fat</p>
+		</div>
+		<div class="button-group">
+			<button class="four-button" onclick="generateRandomWord('4')">4</button>
+			<p class="object-names">goat<br>monkey<br>fish<br>cow<br>frog<br>bug<br>worm</p>
+		</div>
+		<div class="button-group">
+			<button class="five-button" onclick="generateRandomWord('5')">5</button>
+			<p class="object-names">on the moon.<br>on the chair.<br>in my spaghetti.<br>in my soup.<br>on the grass.<br>in my shoes.</p>
+		</div>
+		<div class="button-group">
+			<button class="generate-button" onclick="generateRandomStory()">Surprise</button>
+			<button class="reset-button" onclick="resetStory()">Reset</button>
+		</div>
+	</div>
+	<div class="book" id="story"></div>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
